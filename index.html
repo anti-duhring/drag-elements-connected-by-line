@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="drag.js"></script>
+    <title>Drag objects connected by line</title>
+</head>
+<body>
+    <div class="dragcontainer">
+        <div class="drag" id="dot1" distance="20-20_20-20" pair="dot2" line="line1">
+            <span class="textdot">
+                D1
+            </span>
+        </div>
+        <div class="drag" id="dot2" distance="20-20_20-20" pair="dot1" line="line1">
+            <span class="textdot">
+                D2
+            </span>
+        </div>
+        <svg class="svg-line" width="500" height="500">
+            <line id="line1" x1="20" y1="20" x2="220" y2="220" stroke="teal">
+            </line>
+        </svg>
+   
+    </div>
+
+    <div class="dragcontainer">
+        <div class="drag" id="dot3" distance="20-20_20-20" pair="dot4" line="line2">
+            <span class="textdot">
+                D3
+            </span>
+        </div>
+        <div class="drag" id="dot4" distance="20-20_20-20" pair="dot3" line="line2" >
+            <span class="textdot">
+                D4
+            </span>
+        </div>
+        <svg class="svg-line" width="500" height="500">
+            <line id="line2" x1="20" y1="20" x2="220" y2="220" stroke="teal">
+            </line>
+        </svg>
+   
+    </div>
+</body>
+</html>

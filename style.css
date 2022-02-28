@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    column-gap: 50px;
+}
+.drag {
+    position: absolute;
+    padding: 10px;
+    background: teal;
+    color: white;
+    border-radius: 100vw;
+    cursor: move;
+}
+
+.dragcontainer {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+div#dot1 {
+    left: 0;
+    top: 0;
+}
+
+div#dot2 {
+    top: 200px;
+    left: 200px;
+}
+div#dot3 {
+    left: 400;
+    top: 0;
+}
+
+div#dot4 {
+    top: 200px;
+    left: 200px;
+}
+svg.svg-line {
+    border: 1px solid teal;
+}
